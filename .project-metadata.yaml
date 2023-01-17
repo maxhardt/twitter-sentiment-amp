@@ -6,9 +6,9 @@ specification_version: "0.1"
 prototype_version: "1.0"
 
 runtimes:
-  - editor: Workbench
-    kernel: Cloudera Data Vizualiation
-    edition: CDV 7.0.4
+  - editor: JupyterLab
+    kernel: Python 3.9
+    edition: Standard
 
 tasks:
 
