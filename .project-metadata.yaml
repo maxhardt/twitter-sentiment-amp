@@ -18,14 +18,11 @@ tasks:
   - type: create_model
     name: Twitter sentiment analysis model
     entity_label: twitter-sentiment
-    description: Model for sentiment analysis of Tweets. 
-    short_summary: Deploy a pre-trained model for sentiment analysis of Tweets.
     default_resources:
       cpu: 2
       memory: 8
 
   - type: build_model
-    comment: Twitter sentiment analysis model build
     entity_label: twitter-sentiment
     examples:
       - request:
