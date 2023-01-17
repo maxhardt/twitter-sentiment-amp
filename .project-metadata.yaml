@@ -6,11 +6,13 @@ specification_version: "0.1"
 prototype_version: "1.0"
 
 runtimes:
+
   - editor: JupyterLab
     kernel: Python 3.9
     edition: Standard
 
 tasks:
+
   - type: create_model
     name: Twitter sentiment analysis model
     entity_label: twitter-sentiment
@@ -19,6 +21,7 @@ tasks:
     default_resources:
       cpu: 2
       memory: 8
+
   - type: build_model
     comment: Twitter sentiment analysis model build
     entity_label: twitter-sentiment
@@ -38,3 +41,6 @@ tasks:
     target_file_path: inference.py
     target_function_name: predict
     kernel: python3
+
+  - type: deploy_model
+    entity_label: twitter-sentiment
