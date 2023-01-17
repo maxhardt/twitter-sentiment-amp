@@ -5,22 +5,41 @@ date: '2023-01-17'
 specification_version: "0.1"
 prototype_version: "1.0"
 
-runtimes:
-
-  - editor: JupyterLab
-    kernel: Python 3.9
-    edition: Standard
-
-  - editor: Workbench
-    kernel: Cloudera Data Vizualiation
-    edition: CDV 7.0.4
-
 tasks:
 
+  # - type: create_model
+    # name: Twitter sentiment analysis model
+    # entity_label: twitter-sentiment
+    # description: Model for sentiment analysis of Tweets. 
+    # short_summary: Deploy a pre-trained model for sentiment analysis of Tweets.
+    # default_resources:
+      # cpu: 2
+      # memory: 8
+
+  # - type: build_model
+    # comment: Twitter sentiment analysis model build
+    # entity_label: twitter-sentiment
+    # examples:
+      # - request:
+          # created_at: "2023-01-11T15:05:45.000Z"
+          # id: "1613190434120949761"
+          # text: "I love hackathons!"
+        # response: 
+          # created_at: "2023-01-11T15:05:45.000Z"
+          # id: "1613190434120949761"
+          # text: "I love hackathons!"
+          # negative: 0.0042450143955647945
+          # neutral: 0.011172760277986526
+          # positive: 0.984582245349884
+          # label: "positive"
+    # target_file_path: inference.py
+    # target_function_name: predict
+    # kernel: python3
+
+  # - type: deploy_model
+    # entity_label: twitter-sentiment
+
   - type: start_application
+    name: dataviz
     subdomain: dataviz-twitter-sentiment
     script: /opt/vizapps/tools/arcviz/startup_app.py
-    runtimes:
-      - editor: Workbench
-        kernel: Cloudera Data Vizualiation
-        edition: CDV 7.0.4
