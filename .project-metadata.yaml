@@ -11,6 +11,10 @@ runtimes:
     kernel: Python 3.9
     edition: Standard
 
+  - editor: Workbench
+    kernel: Cloudera Data Vizualiation
+    edition: CDV 7.0.4
+
 tasks:
 
   - type: start_application
