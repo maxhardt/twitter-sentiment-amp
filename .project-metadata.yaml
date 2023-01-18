@@ -48,3 +48,7 @@ tasks:
     name: dataviz
     subdomain: dataviz-twitter-sentiment
     script: /opt/vizapps/tools/arcviz/startup_app.py
+    runtimes:
+      - editor: Workbench
+        kernel: Cloudera Data Visualization
+        edition: CDV 7.0.5
