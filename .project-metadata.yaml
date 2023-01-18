@@ -1,5 +1,5 @@
 name: Twitter sentiment analysis
-description: Deployment of pre-trained model for sentiment analysis of Tweets.
+short_summary: Deployment of pre-trained model for sentiment analysis of Tweets.
 author: Cloudera Inc.
 date: '2023-01-17'
 specification_version: "0.1"
@@ -16,6 +16,7 @@ runtimes:
 tasks:
 
   - type: create_model
+    short_summary: model create step
     name: Twitter sentiment analysis model
     entity_label: twitter-sentiment
     default_resources:
@@ -23,6 +24,7 @@ tasks:
       memory: 8
 
   - type: build_model
+    short_summary: model build step
     entity_label: twitter-sentiment
     examples:
       - request:
@@ -42,11 +44,12 @@ tasks:
     kernel: python3
 
   - type: deploy_model
+    short_summary: model deployment step
     entity_label: twitter-sentiment
 
   - type: start_application
     name: dataviz
-    description: dataviz default application
+    short_summary: dataviz default application step
     subdomain: dataviz-twitter-sentiment
     script: /opt/vizapps/tools/arcviz/startup_app.py
     runtimes:
