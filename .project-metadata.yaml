@@ -1,5 +1,6 @@
 name: Twitter sentiment analysis
 short_summary: Deployment of pre-trained model for sentiment analysis of Tweets.
+description: Deployment of pre-trained model for sentiment analysis of Tweets.
 author: Cloudera Inc.
 date: '2023-01-17'
 specification_version: "0.1"
