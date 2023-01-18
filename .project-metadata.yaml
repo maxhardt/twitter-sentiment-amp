@@ -46,6 +46,7 @@ tasks:
 
   - type: start_application
     name: dataviz
+    description: dataviz default application
     subdomain: dataviz-twitter-sentiment
     script: /opt/vizapps/tools/arcviz/startup_app.py
     runtimes:
