@@ -49,7 +49,7 @@ tasks:
     entity_label: twitter-sentiment
 
   - type: start_application
-    name: dataviz
+    name: Data Discovery and Visualization
     short_summary: dataviz default application step
     subdomain: dataviz-twitter-sentiment
     script: /opt/vizapps/tools/arcviz/startup_app.py
