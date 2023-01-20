@@ -1,6 +1,6 @@
 # Twitter Sentiment Analysis with Cloudera Machine Learning (CML)
 
-Automated deployment with [AMP](https://docs.cloudera.com/machine-learning/cloud/applied-ml-prototypes/topics/ml-amp-project-spec.html) and project specification defined in [./.project-metadata.yaml](./.project-metadata.yaml):
+Automated deployment with [Cloudera AMP](https://docs.cloudera.com/machine-learning/cloud/applied-ml-prototypes/topics/ml-amp-project-spec.html) and project specification defined in [./.project-metadata.yaml](./.project-metadata.yaml):
 
 ```yml
 name: Twitter sentiment analysis
@@ -15,9 +15,6 @@ runtimes:
   - editor: JupyterLab
     kernel: Python 3.9
     edition: Standard
-  - editor: Workbench
-    kernel: Cloudera Data Visualization
-    edition: CDV 7.0.5
 
 tasks:
 
@@ -52,14 +49,3 @@ tasks:
   - type: deploy_model
     short_summary: model deployment step
     entity_label: twitter-sentiment
-
-  - type: start_application
-    name: Data Discovery and Visualization
-    short_summary: dataviz default application step
-    subdomain: dataviz-twitter-sentiment
-    script: /opt/vizapps/tools/arcviz/startup_app.py
-    runtimes:
-      - editor: Workbench
-        kernel: Cloudera Data Visualization
-        edition: CDV 7.0.5
-```
